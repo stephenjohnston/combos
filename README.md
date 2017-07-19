@@ -1,7 +1,7 @@
 # Swimteam Combos Project (Still under development)
 The combos project takes a Meet Manager .mdb database file and attempts to find girls/boys heats that can be combined into one heat.
 
-### Dependencies
+### Prerequisites
 - [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [Maven](https://maven.apache.org/download.cgi)
 - [Serverless](http://serverless.com) 
