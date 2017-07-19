@@ -14,7 +14,7 @@ The application runs using Amazon Web Services.
 To deploy:
 - clone this project
 - Run "mvn package"
-- Run "sls deploy -v --bucket=<bucketName>"
+- Run "sls deploy -v --bucket={bucketName}"
 
 Once you run the deploy command above, the application will begin installing in your AWS account.  You can set AWS_PROFILE environment variable beforehand to indicate the AWS account to deploy into.  The first time the application is deployed, it will create the specified S3 bucket and connect a trigger to fire the lambda when files are created or modified.
 
