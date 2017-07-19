@@ -1,0 +1,22 @@
+service: combos
+
+custom:
+  stage: ${opt:stage, self:provider.stage}
+  bucketName: ${opt:bucket}
+
+provider:
+  name: aws
+  runtime: java8
+  region: us-east-1
+  stage: dev
+
+package:
+  individually: true
+
+functions:
+  mdbarrival:
+    handler: org.hogry.combos.mdbarrival.Handler
+    events:
+      - s3: ${self:custom.bucketName}
+    package:
+      artifact: mdbarrival/target/mdbarrival-dev.jar
